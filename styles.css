@@ -5,14 +5,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Make the whole page exactly viewport height, no global scroll */
 body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
 
-/* Split container uses flex */
 .split-container {
     display: flex;
     width: 100%;
@@ -20,13 +18,13 @@ body {
     flex-wrap: wrap;
 }
 
-/* LEFT SIDE: Image takes 60% width */
+/* LEFT SIDE: Image 60% */
 .image-section {
     flex: 1 1 60%;
     background: linear-gradient(135deg, rgba(102,126,234,0.7), rgba(118,75,162,0.7)), 
                 url('https://i.pinimg.com/736x/81/be/7b/81be7b5baf9915f473ab721c39ec5f36.jpg');
     background-size: cover;
-    background-position: center;    /* ← change this to move the image */
+    background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     display: flex;
@@ -63,7 +61,7 @@ body {
     display: inline-block;
 }
 
-/* RIGHT SIDE: Form takes 40% width */
+/* RIGHT SIDE: Form 40% */
 .form-section {
     flex: 1 1 40%;
     background: #ffffff;
@@ -112,9 +110,9 @@ label {
     font-size: 0.85rem;
 }
 
-/* ========== NEW INPUT STYLE (from Uiverse) ========== */
+/* Input style (Uiverse) */
 .input {
-    width: 100%;               /* override max-width for full width in form */
+    width: 100%;
     padding: 0.875rem;
     font-size: 1rem;
     border: 1.5px solid #000;
@@ -128,7 +126,6 @@ label {
     box-shadow: 5.5px 7px 0 black;
 }
 
-/* Radio group styling (unchanged, but keep consistent) */
 .radio-group {
     display: flex;
     gap: 25px;
@@ -145,7 +142,7 @@ label {
     cursor: pointer;
 }
 
-/* ========== NEW BUTTON STYLE (from Uiverse) ========== */
+/* Fancy Button */
 .button {
     --primary: #ff5569;
     --neutral-1: #f7f8f7;
@@ -164,11 +161,10 @@ label {
     position: relative;
     transition: all 0.3s ease;
     min-width: 200px;
-    width: 100%;              /* make button full width */
+    width: 100%;
     padding: 20px;
     height: 68px;
     font-family: "Galano Grotesque", Poppins, Montserrat, sans-serif;
-    font-style: normal;
     font-size: 18px;
     font-weight: 600;
     margin-top: 12px;
@@ -358,7 +354,8 @@ label {
     50% { opacity: 1; transform: scale(1.2); filter: blur(0); }
     100% { opacity: 1; transform: scale(1); }
 }
-/* Message styling (unchanged) */
+
+/* Message styling */
 .message {
     margin-top: 15px;
     padding: 10px;
@@ -381,7 +378,7 @@ label {
     display: block;
 }
 
-/* Responsive for mobile */
+/* Responsive */
 @media (max-width: 768px) {
     .split-container {
         flex-direction: column;

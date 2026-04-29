@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, viewport-fit=cover">
-    <title>Registration | Split Screen</title>
+    <title>Register | Split Screen</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -65,7 +65,7 @@
                     <!-- Contact & Email -->
                     <div class="row">
                         <div class="col">
-                            <label>Contact No:</label>
+                            <label>Contact No (10 digits):</label>
                             <input type="tel" id="contact" class="input" placeholder="e.g. 9876543210" required>
                         </div>
                         <div class="col">
@@ -76,11 +76,11 @@
 
                     <!-- Age -->
                     <div class="full-width">
-                        <label>Age:</label>
+                        <label>Age (1-120):</label>
                         <input type="number" id="age" class="input" placeholder="e.g. 25" min="1" max="120" required>
                     </div>
 
-                    <!-- Button: using the fancy Uiverse design -->
+                    <!-- Fancy Button -->
                     <button type="submit" class="button" id="registerBtn">
                         <div class="outline"></div>
                         <div class="state state--default">
@@ -114,11 +114,9 @@
                         </div>
                         <div class="state state--sent">
                             <div class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em" stroke-width="0.5px" stroke="black">
-                                    <g style="filter: url(#shadow)">
-                                        <path fill="currentColor" d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C17.93 17.93 22.75 17.93 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C17.1 6.9 21.25 6.9 21.25 12C21.25 17.1 17.1 21.25 12 21.25Z"></path>
-                                        <path fill="currentColor" d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z"></path>
-                                    </g>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="1em" width="1em">
+                                    <path fill="currentColor" d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C17.93 17.93 22.75 17.93 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z"></path>
+                                    <path fill="currentColor" d="M10.5795 15.5801C10.3795 15.5801 10.1895 15.5001 10.0495 15.3601L7.21945 12.5301C6.92945 12.2401 6.92945 11.7601 7.21945 11.4701C7.50945 11.1801 7.98945 11.1801 8.27945 11.4701L10.5795 13.7701L15.7195 8.6301C16.0095 8.3401 16.4895 8.3401 16.7795 8.6301C17.0695 8.9201 17.0695 9.4001 16.7795 9.6901L11.1095 15.3601C10.9695 15.5001 10.7795 15.5801 10.5795 15.5801Z"></path>
                                 </svg>
                             </div>
                             <p>
